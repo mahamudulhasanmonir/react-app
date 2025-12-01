@@ -1,11 +1,9 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center text-center px-6">
+<section className="relative h-screen animated-gradient flex items-center justify-center text-center px-6">
+  <div className="absolute inset-0 bg-black/40"></div>
 
-      {/* Background gradient glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/30 to-purple-700/20 blur-3xl"></div>
-
-      <div className="relative z-10 max-w-3xl mx-auto">
+        <div className="relative z-10 max-w-3xl mx-auto">
         <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight">
           Empowering Businesses with
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">
@@ -25,3 +23,6 @@ export default function Hero() {
     </section>
   );
 }
+
+
+
