@@ -3,3 +3,19 @@
 @tailwind utilities;
 
 /* Optional: custom utilities */
+
+/* Floating orb animation */
+@keyframes floatOrb {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-40px) translateX(20px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+.orb {
+  filter: blur(80px);
+  opacity: 0.35;
+  animation: floatOrb 10s infinite ease-in-out;
+}
+.animation-delay-3000 {
+  animation-delay: 3s;
+}

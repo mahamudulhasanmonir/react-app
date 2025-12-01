@@ -1,11 +1,15 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center text-center px-6">
+<section className="relative h-screen bg-black flex items-center justify-center px-6">
 
-      {/* Background gradient glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/30 to-purple-700/20 blur-3xl"></div>
+  {/* floating orb 1 */}
+  <div className="orb w-72 h-72 bg-indigo-600 rounded-full absolute top-20 left-10"></div>
 
-      <div className="relative z-10 max-w-3xl mx-auto">
+  {/* floating orb 2 */}
+  <div className="orb w-80 h-80 bg-pink-600 rounded-full absolute bottom-16 right-20 animation-delay-3000"></div>
+
+  {/* content */}
+  <div className="relative z-10 text-center max-w-3xl">
         <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight">
           Empowering Businesses with
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">
